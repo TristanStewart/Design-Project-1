@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <link rel="stylesheet" href="tricepstyles.css">
+<head>
+<meta name="viewport" content="width=50px">
+<style>
+.collapsible {
+  background-color: grey;
+  color: black;
+  cursor: pointer;
+  padding: 18px;
+  width: 20%;
+  border: 5px solid black;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.active, .collapsible:hover {
+  background-color: grey;
+}
+
+.content {
+  padding: 0%;
+  display: none;
+  overflow: hidden;
+  background-color: grey;
+}
+.collapsible:after {
+  content: '\02795';
+  font-size: 15px;
+  color: black;
+  float: right;
+  margin-left: 5px;
+ 
+}
+
+.active:after {
+  content: "\2796";
+}
+</style>
+</head>
+<body>
+    <a href="bodyparts.html" class="previous">&laquo; Go Back</a>
+    <center><h2 class="chest">Tricep Excersises</h2></center>
+    <h3 class="chest2"><u>All Three Parts of the Tricep</u></h3>
+    <img src="200x200 (1).png" class="photochest">
+
+    <button type="button" class="collapsible">What Are They?</button>
+<div class="content">
+  <p class="writing"><b>The triceps brachii is a muscle in the upper arm with three parts:
+    <br>
+     The long head at the back, the lateral head on the outer side, and 
+    <br>
+    the medial head on the inner side. The long head helps with shoulder
+    <br>
+    and arm extension, while the lateral and medial heads mainly contribute
+    <br>
+    to elbow extension.</b></p>
+</div>
+<br>
+<body>
+<h4 class="chest2"><u>Excersises</u></h4>
+<button type="button" class="collapsible">Lateral Head</button>
+<div class="content">
+  <p>
+    <ul>
+        <li class="dropset"><a href="https://www.youtube.com/shorts/sTxOvWIBZKY?feature=share" target="_blank">Tricep Pushdowns</a></li>
+        <li class="dropset"><a href="https://www.youtube.com/shorts/36krJZYK_dU?feature=share" target="_blank">Dips</a></li>
+        <li class="dropset"><a href="https://www.youtube.com/shorts/43rg7fBNP2w?feature=share" target="_blank">Close Grip Bench Press</a></li>
+    </ul>
+  </p>
+</div>
+<br>
+<button type="button" class="collapsible">Long Head</button>
+<div class="content">
+  <p>
+    <ul>
+        <li class="dropset"><a href="https://www.youtube.com/shorts/8FNGBJUHfsA?feature=share" target="_blank">Dumbell Overhead Extensions</a></li>
+        <li class="dropset"><a href="https://www.youtube.com/shorts/D1y1-sXZDA0?feature=share" target="_blank">Skullcrushers</a></li>
+        <li class="dropset"><a href="https://www.youtube.com/shorts/3Bv1n7-DN7c?feature=share" target="_blank">Dumbell Kickback</a></li>
+    </ul>
+  </p>
+</div>
+<br>
+<button type="button" class="collapsible">Medial Head</button>
+<div class="content">
+  <p>
+    <ul>
+        <li class="dropset"><a href="https://www.youtube.com/shorts/36krJZYK_dU?feature=share" target="_blank">Dips</a></li>
+        <li class="dropset"><a href="https://www.youtube.com/shorts/IqKUvew7wAU?feature=share" target="_blank">Reverse Tricep Pushdowns</a></li>
+        <li class="dropset"><a href="https://www.youtube.com/shorts/a2OkZuUNULU?feature=share" target="_blank">Diamond Push-Ups</a></li>
+    </ul>
+  </p>
+</div>
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+    
+        for (i = 0; i < coll.length; i++) {
+          coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.display === "block") {
+              content.style.display = "none";
+            } else {
+              content.style.display = "block";
+            }
+          });
+        }
+        </script>
+    </html>

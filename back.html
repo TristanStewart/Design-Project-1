@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+    <link rel="stylesheet" href="back.css">
+<head>
+<meta name="viewport" content="width=50px">
+<style>
+.collapsible {
+  background-color: grey;
+  color: black;
+  cursor: pointer;
+  padding: 18px;
+  width: 20%;
+  border: 5px solid black;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.active, .collapsible:hover {
+  background-color: grey;
+}
+
+.content {
+  padding: 0%;
+  display: none;
+  overflow: hidden;
+  background-color: grey;
+}
+.collapsible:after {
+  content: '\02795';
+  font-size: 15px;
+  color: black;
+  float: right;
+  margin-left: 5px;
+ 
+}
+
+.active:after {
+  content: "\2796";
+}
+</style>
+</head>
+<body>
+    <a href="bodyparts.html" class="previous">&laquo; Go Back</a>
+    <center><h2 class="chest">Back Excersises</h2></center>
+    <h3 class="chest2"><u>All Three Parts of the Back</u></h3>
+    <img src="200x200 (3).png" class="photochest">
+
+    <button type="button" class="collapsible">What Are They?</button>
+<div class="content">
+  <p class="writing"><b>The back has three main parts: the lats, upper back, and lower back.
+    <br>
+    The lats are big muscles running from the upper arm to the lower spine,
+    <br>
+    helping with shoulder movements. The upper back, between the neck
+    <br>
+    and ribs, includes muscles like the trapezius, contributing to posture
+    <br>
+    and shoulder actions. The lower back, below the thoracic spine, has
+    <br>
+    muscles like the erector spinae, providing support for bending,
+    <br>
+     twisting, and posture.</b></p>
+</div>
+<br>
+<body>
+<h4 class="chest2"><u>Excersises</u></h4>
+<button type="button" class="collapsible">Lats</button>
+<div class="content">
+  <p>
+    <ul>
+        <li class="dropset"><a href="https://www.youtube.com/shorts/ZPG8OsHKXLw?feature=share" target="_blank">Pull-Ups</a></li>
+        <li class="dropset"><a href="https://youtu.be/CAwf7n6Luuc" target="_blank">Lat Pulldowns</a></li>
+        <li class="dropset"><a href="https://www.youtube.com/shorts/8c23NBbwLBc?feature=share" target="_blank">T-Bar Rows</a></li>
+    </ul>
+  </p>
+</div>
+<br>
+<button type="button" class="collapsible">Upper Back</button>
+<div class="content">
+  <p>
+    <ul>
+        <li class="dropset"><a href="https://youtu.be/7JnP8dFbS14" target="_blank">Wide Grip Lat Pulldowns</a></li>
+        <li class="dropset"><a href="https://youtu.be/dFzUjzfih7k" target="_blank">Dumbell Rows</a></li>
+        <li class="dropset"><a href="https://www.youtube.com/shorts/8JYpwj1kGV4?feature=share" target="_blank">Dumbell Shrugs</a></li>
+    </ul>
+  </p>
+</div>
+<br>
+<button type="button" class="collapsible">Lower Back</button>
+<div class="content">
+  <p>
+    <ul>
+        <li class="dropset"><a href="https://www.youtube.com/shorts/8np3vKDBJfc?feature=share" target="_blank">Deadlifts</a></li>
+        <li class="dropset"><a href="https://www.youtube.com/shorts/nBUzp4Nj_3Q?feature=share" target="_blank">Back Extensions</a></li>
+    </ul>
+  </p>
+</div>
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+    
+        for (i = 0; i < coll.length; i++) {
+          coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.display === "block") {
+              content.style.display = "none";
+            } else {
+              content.style.display = "block";
+            }
+          });
+        }
+        </script>
+    </html>

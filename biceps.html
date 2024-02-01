@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    <link rel="stylesheet" href="biceps.css">
+<head>
+<meta name="viewport" content="width=50px">
+<style>
+.collapsible {
+  background-color: grey;
+  color: black;
+  cursor: pointer;
+  padding: 18px;
+  width: 20%;
+  border: 5px solid black;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.active, .collapsible:hover {
+  background-color: grey;
+}
+
+.content {
+  padding: 0%;
+  display: none;
+  overflow: hidden;
+  background-color: grey;
+}
+.collapsible:after {
+  content: '\02795';
+  font-size: 15px;
+  color: black;
+  float: right;
+  margin-left: 5px;
+ 
+}
+
+.active:after {
+  content: "\2796";
+}
+</style>
+</head>
+<body>
+    <a href="bodyparts.html" class="previous">&laquo; Go Back</a>
+    <center><h2 class="chest">Bicep Excersises</h2></center>
+    <h3 class="chest2"><u>All Three Parts of the Biceps</u></h3>
+    <img src="200x200 (4).png" class="photochest">
+
+    <button type="button" class="collapsible">What Are They?</button>
+<div class="content">
+        <p class="writing"><b>The biceps has three parts: the long head and short head, which come
+            <br>
+            from the shoulder blade, and the brachialis, which comes from the front
+            <br>
+            of the upper arm. The long and short heads work together for bending
+            <br>
+            the elbow and also help in lifting the arm. The brachialis is mainly for
+            <br>
+            bending the elbow.</b></p>
+</div>
+<br>
+<body>
+<h4 class="chest2"><u>Excersises</u></h4>
+<button type="button" class="collapsible">Long Head</button>
+<div class="content">
+  <p>
+    <ul>
+        <li class="dropset"><a href="https://youtu.be/HhHHBj3qTJ4" target="_blank">Incline Curls</a></li>
+        <li class="dropset"><a href="https://www.youtube.com/shorts/RLpBjdP3b1U?feature=share" target="_blank">Preacher Curls</a></li>
+        <li class="dropset"><a href="https://www.youtube.com/shorts/r1KOIMPTdFA?feature=share" target="_blank">Zottman Curls</a></li>
+    </ul>
+  </p>
+</div>
+<br>
+<button type="button" class="collapsible">Short Head</button>
+<div class="content">
+  <p>
+    <ul>
+        <li class="dropset"><a href="https://youtu.be/vSupPQiBkeY" target="_blank">Close Grip Barbell Curls</a></li>
+        <li class="dropset"><a href="https://www.youtube.com/shorts/cTMjzB2_IH8?feature=share" target="_blank">Spider Curl</a></li>
+        <li class="dropset"><a href="https://www.youtube.com/shorts/cHxRJdSVIkA?feature=share" target="_blank">Concentration Curls</a></li>
+    </ul>
+  </p>
+</div>
+<br>
+<button type="button" class="collapsible">Brachialis</button>
+<div class="content">
+  <p>
+    <ul>
+        <li class="dropset"><a href="https://www.youtube.com/shorts/ZzJs4BLnhCw?feature=share" target="_blank">Hammer Curls</a></li>
+        <li class="dropset"><a href="https://www.youtube.com/shorts/zjsZMH_p0cQ?feature=share" target="_blank">Reverse Curls</a></li>
+    </ul>
+  </p>
+</div>
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+    
+        for (i = 0; i < coll.length; i++) {
+          coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.display === "block") {
+              content.style.display = "none";
+            } else {
+              content.style.display = "block";
+            }
+          });
+        }
+        </script>
+    </html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+    <link rel="stylesheet" href="shoulders.css">
+<head>
+<meta name="viewport" content="width=50px">
+<style>
+.collapsible {
+  background-color: grey;
+  color: black;
+  cursor: pointer;
+  padding: 18px;
+  width: 20%;
+  border: 5px solid black;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.active, .collapsible:hover {
+  background-color: grey;
+}
+
+.content {
+  padding: 0%;
+  display: none;
+  overflow: hidden;
+  background-color: grey;
+}
+.collapsible:after {
+  content: '\02795';
+  font-size: 15px;
+  color: black;
+  float: right;
+  margin-left: 5px;
+ 
+}
+
+.active:after {
+  content: "\2796";
+}
+</style>
+</head>
+<body>
+    <a href="bodyparts.html" class="previous">&laquo; Go Back</a>
+    <center><h2 class="chest">Shoulder Excersises</h2></center>
+    <h3 class="chest2"><u>All Three Parts of the Shoulders</u></h3>
+    <img src="200x200 (2).png" class="photochest">
+
+    <button type="button" class="collapsible">What Are They?</button>
+<div class="content">
+           <p class="writing"><b>The shoulder muscles, known as the deltoids, are comprised of three 
+            <br>
+            distinct parts. The front deltoid, situated at the front of the shoulder,
+            <br>
+            plays a role in shoulder flexion and assists in shoulder abduction
+            <br>
+            The middle deltoid, located in the middle part of the shoulder,
+            <br>
+            is primarily responsible for shoulder abduction, aiding in lifting the arm sideways.
+            <br>
+            Lastly, the rear deltoid, positioned at the back of the shoulder, is involved in shoulder
+            <br>
+            extension, horizontal abduction, and external rotation.</b></p></li>
+</div>
+<br>
+<body>
+<h4 class="chest2"><u>Excersises</u></h4>
+<button type="button" class="collapsible">Front Delt</button>
+<div class="content">
+  <p>
+    <ul>
+        <li class="dropset"><a href="https://www.youtube.com/shorts/dyv6g4xBFGU?feature=share" target="_blank">Overhead Press</a></li>
+        <li class="dropset"><a href="https://youtu.be/-t7fuZ0KhDA" target="_blank">Front Dumbell Raises</a></li>
+    </ul>
+  </p>
+</div>
+<br>
+<button type="button" class="collapsible">Middle Delt</button>
+<div class="content">
+  <p>
+    <ul>
+        <li class="dropset"><a href="https://www.youtube.com/shorts/G-piLwLu0d4?feature=share" target="_blank">Lateral Raises</a></li>
+        <li class="dropset"><a href="https://www.youtube.com/shorts/qqntiuPmLDM?feature=share" target="_blank">Seated Lateral raises</a></li>
+    </ul>
+  </p>
+</div>
+<br>
+<button type="button" class="collapsible">Rear Delt</button>
+<div class="content">
+  <p>
+    <ul>
+        <li class="dropset"><a href="https://www.youtube.com/shorts/KoRDmXocJII?feature=share" target="_blank">Bent Over Lateral Raises</a></li>
+        <li class="dropset"><a href="https://www.youtube.com/shorts/R4a1hpzYOIc?feature=share" target="_blank">Reverse Peck Deck Machine</a></li>
+    </ul>
+  </p>
+</div>
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+    
+        for (i = 0; i < coll.length; i++) {
+          coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.display === "block") {
+              content.style.display = "none";
+            } else {
+              content.style.display = "block";
+            }
+          });
+        }
+        </script>
+    </html>
